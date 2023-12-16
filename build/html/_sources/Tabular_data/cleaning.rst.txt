@@ -1,0 +1,18 @@
+Data Cleaning
++++++++++++++
+
+key goals 
+===========
+
+Options 
+========
+
+Clustering
+-------------
+
+Time_series
+-------------
+
+Prediction
+-------------
+

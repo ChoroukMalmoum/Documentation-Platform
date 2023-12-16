@@ -1,0 +1,17 @@
+Statistics
+++++++++++
+
+key goals 
+===========
+
+Options 
+========
+
+Clustering
+-------------
+
+Time_series
+-------------
+
+Prediction
+-------------

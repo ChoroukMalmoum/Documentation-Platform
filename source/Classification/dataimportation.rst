@@ -50,6 +50,9 @@ Once the data has been successfully imported, users are presented with an explor
 
     -Bar Charts: Illustrating image count per class.
     -Information about image dimensions.
+ 
+Understanding the distribution of URLs adds an extra layer of insight into how images are sourced and categorized.
 
+      **Note:**  Refer to the `chart js documentation <https://www.chartjs.org/docs/latest/>`_  for more details on customizing and extending the chart functionalities.
 
 The exploration page provides a comprehensive overview, enabling users to assess dataset composition, identify class imbalances, and make informed decisions for preprocessing and model selection in their image classification project.

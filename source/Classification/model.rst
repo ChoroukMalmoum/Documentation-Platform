@@ -30,6 +30,9 @@ Step-by-Step Configuration:
       g. **Additional Options:**
         -Users have the flexibility to add or drop layers based on their preferences, allowing for fine-tuning and experimentation.
 
+**Note:** Refer to the `tensorflow documentation <https://www.tensorflow.org/tutorials/images/classification>`_ for more details on the layers of the model. 
+  
+
 
 2. **Upload Your Model:**
 ------------------------
@@ -66,3 +69,40 @@ The "Choose Pretrained Model" option offers users the convenience of leveraging 
         -Recognized for its simplicity and effectiveness in capturing hierarchical features.
 
 The "Choose Pretrained Model" option streamlines the model selection process, allowing users to benefit from the knowledge embedded in well-established architectures without the need for extensive training or customization.
+
+
+Model Training
++++++++++++++++++++
+
+After selecting the model, the next crucial step is training it on your data to enhance its predictive capabilities.
+
+
+1. **Choose Layers for Training:**
+------------------------
+
+      -Customize the training process by selecting specific layers for training. 
+      -Opt to train the entire model or focus on specific layers for fine-tuning.
+
+This flexibility allows users to adapt the training strategy based on their dataset and objectives.
+
+
+2. **Configuring hyperparameters:**
+------------------------
+
+      -Learning Rate: Determines the step size during the optimization process.
+      -Batch Size: Specifies the number of data points used in each iteration.
+      -Number of Epochs: Defines the number of times the model iterates over the entire dataset.
+
+Adjusting these hyperparameters enables users to optimize the model's learning process for better performance.
+
+
+3. **Monitoring the Training:**
+------------------------
+During the training process, the application provides a dynamic and real-time monitoring interface, enhancing the user's ability to track the model's progression effectively. Leveraging Socket.IO, the application delivers live updates on crucial metrics, including accuracy and loss. Here's how monitoring unfolds:
+
+      -As the model iterates through epochs, real-time updates on accuracy and loss are streamed using Socket.IO.
+      -Users can observe the dynamic behavior of these metrics, gaining insights into the model's convergence and               performance improvements.
+
+Real-time monitoring allows users to gauge the model's performance and make adjustments if necessary.
+**Note:** Refer to the `socketio documentation <https://python-socketio.readthedocs.io/en/stable/>`_ for more details on socketio implementation. 
+  

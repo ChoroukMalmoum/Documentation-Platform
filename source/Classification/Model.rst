@@ -106,3 +106,10 @@ Adjusting these hyperparameters enables users to optimize the model's learning p
 During the training process, the application provides a dynamic and real-time monitoring display, enhancing the user's ability to track the model's progression effectively. Leveraging Socket.IO, the application delivers live updates on crucial metrics, including accuracy and loss. 
 
 - Refer to the `Socketio documentation <https://python-socketio.readthedocs.io/en/stable/>`_ for more details on the Socketio implementation.  
+
+
+
+Prediction
++++++++++++++++++++
+
+Coming Soon

@@ -6,9 +6,57 @@ Prediction
 -----------
 
 
+.. class:: merge_datasets(dataset1, dataset2, column_dataset1, column_dataset2, merge_type='left')
+
+   The `merge_datasets` class merges two datasets based on specified columns.
+
+   :param dataset1: The first dataset.
+   :type dataset1: pd.DataFrame
+   :param dataset2: The second dataset.
+   :type dataset2: pd.DataFrame
+   :param column_dataset1: The column from the first dataset for merging.
+   :type column_dataset1: str
+   :param column_dataset2: The column from the second dataset for merging.
+   :type column_dataset2: str
+   :param merge_type: Type of merge to be performed. Options: 'left', 'right', 'inner', 'outer'.
+   :type merge_type: str, optional
+
+   :return: Merged dataset.
+   :rtype: pd.DataFrame
+   - Refer to the `pandas.DataFrame.merge documentation <https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html>`_ for more details on the ``merge`` method.
+
+
+
+
 Clustering
 -----------
+
+**Handling Outliers:**
+       The `handle_outliers <outliers.html>`_ class offers users 3 options for managing outliers. Users can start by selecting the specific column for outlier removal and then choose between automated methods or personalized approaches. Two primary strategies are available:
+
+       - **Z-Score Method:**
+         Suited for datasets with a normal distribution, this method identifies outliers based on their deviation from the mean in terms of standard deviations using the ``z_threshold`` .
+
+       - **IQR Method:**
+         Ideal for datasets with skewed distributions, this method uses the Interquartile Range (IQR) to detect and manage outliers using the ``iqr_multiplier``.
+
+       - The class can detect the distribution type if 'auto' is selected and then apply one of the previous methods.
 
 
 Time series
 ------------
+
+**Handling Outliers:**
+=============================
+       The `handle_outliers <outliers.html>`_ class offers users 3 options for managing outliers. Users can start by selecting the specific column for outlier removal and then choose between automated methods or personalized approaches. Two primary strategies are available:
+
+       - **Z-Score Method:**
+         Suited for datasets with a normal distribution, this method identifies outliers based on their deviation from the mean in terms of standard deviations using the ``z_threshold`` .
+
+       - **IQR Method:**
+         Ideal for datasets with skewed distributions, this method uses the Interquartile Range (IQR) to detect and manage outliers using the ``iqr_multiplier``.
+
+       - The class can detect the distribution type if 'auto' is selected and then apply one of the previous methods.
+
+
+

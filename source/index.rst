@@ -12,7 +12,7 @@ Welcome to giiads_platform's documentation!
    :caption: Tabular_data
 
    Tabular_data/overview
-   Tabular_data/preprocessing
+   Tabular_data/Preprocessing/user
    Tabular_data/ml
 
    

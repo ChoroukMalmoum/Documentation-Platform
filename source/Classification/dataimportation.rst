@@ -1,6 +1,8 @@
 Data Importation
 ++++++++++++++++++
 
+
+
 Data importation is a crucial initial step in the image classification process, where users bring their datasets into the application for further analysis and model training. This phase provides two primary methods for importing data:
 
 
@@ -35,7 +37,8 @@ Data importation is a crucial initial step in the image classification process, 
 
 
 Data Exploration
-++++++++++++++++++++
+------------------------
+
 
 Once the data has been successfully imported, users are presented with an exploration page that offers valuable insights into the dataset. This exploration page is designed to provide users with key statistics and visualizations that aid in understanding the characteristics of the imported data. The following components are included in the data exploration page:
 

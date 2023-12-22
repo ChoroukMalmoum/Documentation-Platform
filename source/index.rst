@@ -21,7 +21,11 @@ Welcome to giiads_platform's documentation!
    :hidden:
    :caption: Classification
 
-   Classification/classification
+   Classification/overview
+   Classification/dataimportation
+   Classification/Model
+   Classification/predict
+
 
 .. toctree::
    :maxdepth: 2

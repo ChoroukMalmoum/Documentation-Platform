@@ -44,7 +44,7 @@ a. **Basic unstructured data**
     
 b. **Unstructured date format**
 ====================================
-     In the context of data formation adhering to the ISO 8601 standard for date and time-related data.
+     The `convert_to_iso8601 <convert_to_iso8601.html>`_ Class addresses dates structural errors. In the context of data formation adhering to the ISO 8601 standard for date and time-related data.
     .. note::
         ISO 8601 is an international standard covering the worldwide exchange and communication of date and time-related data. It is maintained by the International Organization for Standardization (ISO). 
         ISO 8601 applies to these representations and formats: dates, in the Gregorian calendar (including the proleptic Gregorian calendar); times, based on the 24-hour timekeeping system, with optional UTC offset; time intervals; and combinations thereof.

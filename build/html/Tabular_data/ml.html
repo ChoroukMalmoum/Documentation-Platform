@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Detection &mdash; giiads_platform  documentation</title>
+  <title>Machine Learning &mdash; giiads_platform  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -21,7 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Machine Learning" href="../Tabular_data/ml.html" /> 
+    <link rel="next" title="Detection" href="../Detection/detection.html" />
+    <link rel="prev" title="Data Preprocessing" href="Preprocessing/user.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,14 +45,19 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Tabular_data</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../Tabular_data/overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Tabular_data/Preprocessing/user.html">Data Preprocessing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Tabular_data/ml.html">Machine Learning</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Preprocessing/user.html">Data Preprocessing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Machine Learning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prediction"><strong>Prediction</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clustering"><strong>Clustering</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#time-series"><strong>Time series</strong></a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Detection</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Detection</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Detection/detection.html">Detection</a></li>
 </ul>
 
         </div>
@@ -68,9 +74,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Detection</li>
+      <li class="breadcrumb-item active">Machine Learning</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Detection/detection.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/Tabular_data/ml.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -78,15 +84,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="detection">
-<h1>Detection<a class="headerlink" href="#detection" title="Link to this heading"></a></h1>
+  <section id="machine-learning">
+<h1>Machine Learning<a class="headerlink" href="#machine-learning" title="Link to this heading"></a></h1>
+<section id="prediction">
+<h2><strong>Prediction</strong><a class="headerlink" href="#prediction" title="Link to this heading"></a></h2>
+<dl class="simple">
+<dt>The <a class="reference external" href="outliers.html">predict</a> class offers</dt><dd><ul class="simple">
+<li><p><strong>Classification</strong>
+Suited for datasets with a normal distribution, this method identifies outliers based on their deviation from the mean in terms of standard deviations using the <code class="docutils literal notranslate"><span class="pre">z_threshold</span></code> .</p></li>
+<li><p><strong>Regression</strong>
+Ideal for datasets with skewed distributions, this method us</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="clustering">
+<h2><strong>Clustering</strong><a class="headerlink" href="#clustering" title="Link to this heading"></a></h2>
+<p>The <a class="reference external" href="outliers.html">clustering</a> class offers</p>
+</section>
+<section id="time-series">
+<h2><strong>Time series</strong><a class="headerlink" href="#time-series" title="Link to this heading"></a></h2>
+<p>The <a class="reference external" href="outliers.html">Time series</a> class offers</p>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../Tabular_data/ml.html" class="btn btn-neutral float-left" title="Machine Learning" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Preprocessing/user.html" class="btn btn-neutral float-left" title="Data Preprocessing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Detection/detection.html" class="btn btn-neutral float-right" title="Detection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

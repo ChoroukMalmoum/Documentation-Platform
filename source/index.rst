@@ -13,7 +13,7 @@ Welcome to giiads_platform's documentation!
 
    Tabular_data/overview
    Tabular_data/Preprocessing/user
-   Tabular_data/ml
+   Tabular_data/ml/user
 
    
 .. toctree::

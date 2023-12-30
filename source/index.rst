@@ -32,5 +32,7 @@ Welcome to giiads_platform's documentation!
    :hidden:
    :caption: Detection
 
-   Detection/detection
+   Detection/overview
+   Detection/Data Processing/user
+   Detection/_models/user
 

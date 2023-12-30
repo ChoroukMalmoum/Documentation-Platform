@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>predict Function &mdash; giiads_platform  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=b3ba4146"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            giiads_platform
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Tabular_data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preprocessing/user.html">Data Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user.html">Machine Learning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Classification</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/dataimportation.html">Data Importation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/Model.html">Model Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/Model.html#model-training">Model Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/predict.html">Prediction</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Detection/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Detection/Data%20Processing/user.html">Data Handling and Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Detection/_models/user.html">Model</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">giiads_platform</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">predict Function</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Tabular_data/ml/predict.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="predict-function">
+<h1>predict Function<a class="headerlink" href="#predict-function" title="Permalink to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'kmeans'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaled_df</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#predict" title="Permalink to this definition"></a></dt>
+<dd><p>The <cite>predict</cite> function encapsulates the process of cluster prediction, enabling users to infer cluster assignments for data points based on the specified clustering algorithm. By offering a versatile interface and integrating diverse methodologies, the function facilitates seamless cluster prediction, fostering exploration, and understanding of data structures and patterns.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><p><strong>method</strong> (<em>str, optional</em>): Specifies the clustering algorithm to be employed for prediction. Valid options include “kmeans”, “agglomerativeC”, “dbscan”, or “gmm”. Default is “kmeans”.</p></li>
+<li><p><strong>n_clusters</strong> (<em>int, optional</em>): The desired number of clusters for the selected clustering algorithm. Default is 4.</p></li>
+<li><p><strong>scaled_df</strong> (<em>DataFrame or array-like, optional</em>): The scaled dataset intended for cluster prediction, ensuring consistency and accuracy in results.</p></li>
+<li><p><strong>df</strong> (<em>DataFrame, optional</em>): The original dataset, retaining its intrinsic attributes and facilitating comprehensive analysis and visualization.</p></li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>A dataframe augmented with cluster labels derived from the specified clustering algorithm and a scatter plot visual representation depicting the distribution of data points within the predicted clusters, fostering intuitive comprehension and exploratory data analysis.</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Chorouk Malmoum.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TensorflowModels &mdash; giiads_platform  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js?v=b3ba4146"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            giiads_platform
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Tabular_data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Tabular_data/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Tabular_data/Preprocessing/user.html">Data Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Tabular_data/ml/user.html">Machine Learning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Classification</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Classification/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Classification/dataimportation.html">Data Importation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Classification/Model.html">Model Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Classification/Model.html#model-training">Model Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Classification/predict.html">Prediction</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Data%20Processing/user.html">Data Handling and Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user.html">Model</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">giiads_platform</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">TensorflowModels</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/Detection/_models/Tensorflow/tfmodels.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tensorflowmodels">
+<h1>TensorflowModels<a class="headerlink" href="#tensorflowmodels" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="TensorflowModels">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TensorflowModels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_url</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TensorflowModels" title="Permalink to this definition"></a></dt>
+<dd><p>This class manages the training, evaluation, and inference of TensorFlow models for object detection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model_name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the TensorFlow model to be used. If not provided, it will be inferred from the model_url.</p></li>
+<li><p><strong>model_url</strong> (<em>str</em><em>, </em><em>optional</em>) – The URL from where the TensorFlow model can be downloaded. If not provided, it will be inferred from the model_name.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If both model_name and model_url are not provided, or if the model_url does not match the expected URL for the given model_name.</p>
+</dd>
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>BASE_URL</strong> – The base URL from where the TensorFlow models can be downloaded.</p></li>
+<li><p><strong>TF_RECORD_SCRIPT_NAME</strong> – The name of the script used to generate TensorFlow records.</p></li>
+<li><p><strong>LABEL_MAP_NAME</strong> – The name of the label map file.</p></li>
+<li><p><strong>model_name</strong> – The name of the TensorFlow model to be used.</p></li>
+<li><p><strong>model_url</strong> – The URL from where the TensorFlow model can be downloaded.</p></li>
+<li><p><strong>detection_model</strong> – The model that will be loaded from the last checkpoint for performing object detection.</p></li>
+<li><p><strong>CUSTOM_MODEL_NAME</strong> – A custom name for the model, prefixed with ‘<a href="#id1"><span class="problematic" id="id2">my_</span></a>’.</p></li>
+<li><p><strong>paths</strong> – A dictionary containing various paths related to the model, such as the workspace path, the annotation path, the data path, etc.</p></li>
+<li><p><strong>files</strong> – A dictionary containing various files related to the model, such as the pipeline configuration file, the TF record script, and the label map.</p></li>
+<li><p><strong>TRAINING_SCRIPT</strong> – The path to the training script for the model.</p></li>
+</ul>
+</dd>
+</dl>
+<ul>
+<li><p><a class="reference external" href="download_model.html">download_model</a>: Downloads the model from the TensorFlow Model Zoo if url is provided.</p></li>
+<li><dl>
+<dt><a class="reference external" href="labelmap.html">create_label_map</a>: Creates a label map for the dataset.</dt><dd><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A label map is a text file that maps each of the used labels to an integer value. This file is used to map the labels to indices, which are then used to construct the ground truth and prediction tensors.</p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><a class="reference external" href="tfrecords.html">data_to_tfrecord</a>: Converts the dataset to <a class="reference external" href="https://www.tensorflow.org/tutorials/load_data/tfrecord">TFRecord format</a>.</dt><dd><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>TFRecord is the format required by TensorFlow Object Detection API for training.</p>
+</div>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="modeltype.html">get_model_type</a>: Returns the model type based on the configuration of the model. This can be used to modify the configuration of the model.</p></li>
+<li><p><a class="reference external" href="config.html">update_config_basic</a>: Updates the configuration of the model based on the provided parameters.</p></li>
+<li><p><a class="reference external" href="train.html">train</a>: Trains the model on the dataset.</p></li>
+<li><p><a class="reference external" href="eval.html">evaluate</a>: Evaluates the model’s performance on the dataset.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to test the model, we provide two functions that can be used to perform inference on images and webcam videos:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="testimage.html">test_model_on_image</a>: Performs inference on a single image.</p></li>
+<li><p><a class="reference external" href="testvideo.html">test_model_on_camera</a>: Executes inference on a webcam.</p></li>
+</ul>
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Chorouk Malmoum.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

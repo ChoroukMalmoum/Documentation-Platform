@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>extract_temporal_features_existing Function &mdash; giiads_platform  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=b3ba4146"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            giiads_platform
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Tabular_data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preprocessing/user.html">Data Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user.html">Machine Learning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Classification</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/dataimportation.html">Data Importation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/Model.html">Model Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/Model.html#model-training">Model Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/predict.html">Prediction</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Detection/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Detection/Data%20Processing/user.html">Data Handling and Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Detection/_models/user.html">Model</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">giiads_platform</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">extract_temporal_features_existing Function</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Tabular_data/ml/extract_temporal_features_existing.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="extract-temporal-features-existing-function">
+<h1>extract_temporal_features_existing Function<a class="headerlink" href="#extract-temporal-features-existing-function" title="Permalink to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="extract_temporal_features_existing">
+<span class="sig-name descname"><span class="pre">extract_temporal_features_existing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#extract_temporal_features_existing" title="Permalink to this definition"></a></dt>
+<dd><p>Extracts temporal features from a given time series dataset with an existing timestamp column. The function performs the following operations:</p>
+<ol class="arabic">
+<li><p><strong>Timestamp Standardization</strong>:
+- Converts the timestamp data into a standardized format using the provided or inferred timestamp format.
+- If the <cite>timestamp_format</cite> parameter is not specified, the function attempts to infer the format from the data.</p></li>
+<li><p><strong>Feature Extraction</strong>:
+- Computes and appends the following temporal features as new columns to the dataset:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Year: Extracts the year component from the timestamp.</p></li>
+<li><p>Month: Extracts the month component from the timestamp.</p></li>
+<li><p>Day: Extracts the day component from the timestamp.</p></li>
+<li><p>Weekday: Extracts the weekday component, where Monday is denoted as 0 and Sunday as 6.</p></li>
+<li><p>Hour: Extracts the hour component from the timestamp.</p></li>
+<li><p>Minute: Extracts the minute component from the timestamp.</p></li>
+<li><p>Second: Extracts the second component from the timestamp.</p></li>
+<li><p>Date_Only: Constructs a date-only string representation (YYYY/MM/DD) from the timestamp.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – DataFrame, input time series dataset with a timestamp column.</p></li>
+<li><p><strong>timestamp_column</strong> – str, name of the column containing timestamps.</p></li>
+<li><p><strong>timestamp_format</strong> – str, format of the timestamp in the input data. Defaults to ‘%Y-%m-%d %H:%M:%S’.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame, the input data enriched with additional temporal features.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Chorouk Malmoum.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

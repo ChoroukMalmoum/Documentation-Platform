@@ -1,9 +1,9 @@
 Feature Selection
 ++++++++++++++++++
 
-.. class:: apply_pca(df, excluded_features=[], num_components=None)
+.. function:: apply_pca(df, excluded_features=[], num_components=None)
 
-   The `apply_pca` class performs Principal Component Analysis (PCA) on a DataFrame for feature selection.
+   The :func:`apply_pca` method performs Principal Component Analysis (PCA) on a DataFrame for feature selection.
 
    :param df: The input DataFrame.
    :type df: pd.DataFrame

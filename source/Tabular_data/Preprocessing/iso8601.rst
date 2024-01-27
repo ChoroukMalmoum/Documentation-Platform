@@ -1,7 +1,7 @@
 Unstructured date format
 ++++++++++++++++++++++++++
 
-.. class:: convert_to_iso8601(df)
+.. function:: convert_to_iso8601(df)
    :module: your_module_name
 
    Convert datetime columns in the DataFrame to ISO 8601 format.

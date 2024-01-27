@@ -1,9 +1,9 @@
 Replace Excess Categories with "Other"
 ++++++++++++++++++++++++++++++++++++++
 
-.. class:: replace_excess_values_with_other(df, columns_to_replace, top_n=3)
+.. function:: replace_excess_values_with_other(df, columns_to_replace, top_n=3)
 
-   The `replace_excess_values_with_other` class replaces values in categorical columns not in the top N most common values with 'other'.
+   The :func:`replace_excess_values_with_other` method replaces values in categorical columns not in the top N most common values with 'other'.
 
    :param df: The input DataFrame.
    :type df: pd.DataFrame

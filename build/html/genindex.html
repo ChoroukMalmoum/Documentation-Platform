@@ -51,13 +51,14 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Classification/overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classification/dataimportation.html">Data Importation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Classification/Model.html">Model Selection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Classification/Model.html#model-training">Model Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Classification/Model.html">Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Classification/predict.html">Prediction</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Detection/detection.html">Detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Detection/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Detection/Data%20Processing/user.html">Data Handling and Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Detection/_models/user.html">Model</a></li>
 </ul>
 
         </div>
@@ -92,20 +93,42 @@
  | <a href="#C"><strong>C</strong></a>
  | <a href="#D"><strong>D</strong></a>
  | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
  | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
  | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
  | <a href="#O"><strong>O</strong></a>
  | <a href="#P"><strong>P</strong></a>
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#Y"><strong>Y</strong></a>
  
 </div>
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="Tabular_data/Preprocessing/aggregating.html#aggregate_and_group">aggregate_and_group (built-in class)</a>
+      <li><a href="Detection/_models/Custom/add_conv.html#CustomYoloModel.add_conv_layer">add_conv_layer() (CustomYoloModel method)</a>
 </li>
+      <li><a href="Detection/_models/Custom/conv_before_max.html#CustomYoloModel.add_conv_layer_before_maxpool">add_conv_layer_before_maxpool() (CustomYoloModel method)</a>
+</li>
+      <li><a href="Detection/_models/Custom/add_dense.html#CustomYoloModel.add_dense_block">add_dense_block() (CustomYoloModel method)</a>
+</li>
+      <li><a href="Detection/_models/Custom/add_max.html#CustomYoloModel.add_maxpool_layer">add_maxpool_layer() (CustomYoloModel method)</a>
+</li>
+      <li>
+    aggregate_and_group()
+
+      <ul>
+        <li><a href="Tabular_data/Preprocessing/aggregating.html#aggregate_and_group">built-in function</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     anomalies_detection()
 
@@ -113,9 +136,16 @@
         <li><a href="Tabular_data/ml/anomalies_detection.html#anomalies_detection">built-in function</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="Tabular_data/Preprocessing/Feature_Selection.html#apply_pca">apply_pca (built-in class)</a>
+      <li>
+    apply_pca()
+
+      <ul>
+        <li><a href="Tabular_data/Preprocessing/Feature_Selection.html#apply_pca">built-in function</a>
+</li>
+      </ul></li>
+      <li><a href="Detection/Data%20Processing/Augmenter-augment.html#Augmenter.augment">augment() (Augmenter method)</a>
+</li>
+      <li><a href="Detection/Data%20Processing/Augmenter.html#Augmenter">Augmenter (built-in class)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -123,17 +153,31 @@
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/Data%20Processing/ImageTrans-bounding_box.html#ImageTrans.bounding_box">bounding_box() (ImageTrans method)</a>, <a href="Detection/Data%20Processing/ImageTrans-show.html#ImageTrans.bounding_box">[1]</a>
+</li>
       <li>
     built-in function
 
       <ul>
+        <li><a href="Tabular_data/Preprocessing/aggregating.html#aggregate_and_group">aggregate_and_group()</a>
+</li>
         <li><a href="Tabular_data/ml/anomalies_detection.html#anomalies_detection">anomalies_detection()</a>
+</li>
+        <li><a href="Tabular_data/Preprocessing/Feature_Selection.html#apply_pca">apply_pca()</a>
 </li>
         <li><a href="Tabular_data/ml/create_anomaly_score_plot.html#create_anomaly_score_plot">create_anomaly_score_plot()</a>
 </li>
         <li><a href="Tabular_data/ml/create_timestamp_column.html#create_timestamp_column">create_timestamp_column()</a>
 </li>
+        <li><a href="Tabular_data/Preprocessing/outliers.html#drop_outliers">drop_outliers()</a>
+</li>
         <li><a href="Tabular_data/ml/extract_temporal_features_existing.html#extract_temporal_features_existing">extract_temporal_features_existing()</a>
+</li>
+        <li><a href="Tabular_data/Preprocessing/structural_errors.html#handel_basic_structured_data">handel_basic_structured_data()</a>
+</li>
+        <li><a href="Tabular_data/Preprocessing/missing_values.html#handle_missing_data">handle_missing_data()</a>
+</li>
+        <li><a href="Tabular_data/Preprocessing/merge.html#merge_datasets">merge_datasets()</a>
 </li>
         <li><a href="Tabular_data/ml/models_test.html#models_test">models_test()</a>
 </li>
@@ -145,7 +189,17 @@
 </li>
         <li><a href="Tabular_data/ml/predict.html#predict">predict()</a>
 </li>
+        <li><a href="Tabular_data/Preprocessing/excess_to_other.html#replace_excess_values_with_other">replace_excess_values_with_other()</a>
+</li>
+        <li><a href="Tabular_data/Preprocessing/feature_scaling.html#scale_features">scale_features()</a>
+</li>
         <li><a href="Tabular_data/ml/test.html#test">test()</a>
+</li>
+        <li><a href="Detection/_models/Tensorflow/testvideo.html#utils.test_model_on_camera">utils.test_model_on_camera()</a>
+</li>
+        <li><a href="Detection/_models/Tensorflow/testimage.html#utils.test_model_on_image">utils.test_model_on_image()</a>
+</li>
+        <li><a href="Detection/_models/Custom/train.html#Yolo.train.train_Custom_model">Yolo.train.train_Custom_model()</a>
 </li>
       </ul></li>
   </ul></td>
@@ -154,7 +208,7 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="Tabular_data/Preprocessing/iso8601.html#your_module_name.convert_to_iso8601">convert_to_iso8601 (class in your_module_name)</a>
+      <li><a href="Tabular_data/Preprocessing/iso8601.html#your_module_name.convert_to_iso8601">convert_to_iso8601() (in module your_module_name)</a>
 </li>
       <li>
     create_anomaly_score_plot()
@@ -165,6 +219,8 @@
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/_models/Tensorflow/labelmap.html#TensorflowModels.create_label_map">create_label_map() (TensorflowModels method)</a>
+</li>
       <li>
     create_timestamp_column()
 
@@ -172,20 +228,51 @@
         <li><a href="Tabular_data/ml/create_timestamp_column.html#create_timestamp_column">built-in function</a>
 </li>
       </ul></li>
+      <li><a href="Detection/_models/Custom/model.html#CustomYoloModel">CustomYoloModel (built-in class)</a>
+</li>
   </ul></td>
 </tr></table>
 
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="Tabular_data/Preprocessing/outliers.html#drop_outliers">drop_outliers (built-in class)</a>
+      <li><a href="Detection/_models/Tensorflow/tfrecords.html#TensorflowModels.data_to_tfrecord">data_to_tfrecord() (TensorflowModels method)</a>
 </li>
+      <li><a href="Detection/Data%20Processing/Exporter-default_handling.html#Exporter.default_handling">default_handling() (Exporter method)</a>
+
+      <ul>
+        <li><a href="Detection/Data%20Processing/FileCsvHandler-default_handling.html#FileCsvHandler.default_handling">(FileCsvHandler method)</a>
+</li>
+        <li><a href="Detection/Data%20Processing/FilesHandler-default_handling.html#FilesHandler.default_handling">(FilesHandler method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/_models/Tensorflow/download_model.html#TensorflowModels.download_model">download_model() (TensorflowModels method)</a>
+</li>
+      <li>
+    drop_outliers()
+
+      <ul>
+        <li><a href="Tabular_data/Preprocessing/outliers.html#drop_outliers">built-in function</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/_models/Tensorflow/eval.html#TensorflowModels.evaluate_model">evaluate_model() (TensorflowModels method)</a>
+</li>
+      <li><a href="Detection/_models/yolov8/exportyolov8.html#YoloModel.export">export() (YoloModel method)</a>
+</li>
+      <li><a href="Detection/Data%20Processing/Exporter-export_local.html#Exporter.export_local">export_local() (Exporter method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/Data%20Processing/Exporter.html#Exporter">Exporter (built-in class)</a>
+</li>
       <li>
     extract_temporal_features_existing()
 
@@ -196,14 +283,70 @@
   </ul></td>
 </tr></table>
 
-<h2 id="H">H</h2>
+<h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="Tabular_data/Preprocessing/structural_errors.html#handel_basic_structured_data">handel_basic_structured_data (built-in class)</a>
+      <li><a href="Detection/Data%20Processing/FileCsvHandler-fetch_images.html#FileCsvHandler.fetch_images">fetch_images() (FileCsvHandler method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="Tabular_data/Preprocessing/missing_values.html#handle_missing_data">handle_missing_data (built-in class)</a>
+      <li><a href="Detection/Data%20Processing/FileCsvHandler.html#FileCsvHandler">FileCsvHandler (built-in class)</a>
+</li>
+      <li><a href="Detection/Data%20Processing/FilesHandler.html#FilesHandler">FilesHandler (built-in class)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/Data%20Processing/Augmenter-get_annotated_image.html#Augmenter.get_annotated_image">get_annotated_image() (Augmenter method)</a>
+
+      <ul>
+        <li><a href="Detection/Data%20Processing/ImageTrans-get_annotated_image.html#ImageTrans.get_annotated_image">(ImageTrans method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/Data%20Processing/Augmenter-get_augmented_files.html#Augmenter.get_augmented_files">get_augmented_files() (Augmenter method)</a>
+</li>
+      <li><a href="Detection/Data%20Processing/ImageTrans-get_image_boxes.html#ImageTrans.get_image_boxes">get_image_boxes() (ImageTrans method)</a>
+</li>
+      <li><a href="Detection/_models/Tensorflow/modeltype.html#TensorflowModels.get_model_type">get_model_type() (TensorflowModels method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    handel_basic_structured_data()
+
+      <ul>
+        <li><a href="Tabular_data/Preprocessing/structural_errors.html#handel_basic_structured_data">built-in function</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    handle_missing_data()
+
+      <ul>
+        <li><a href="Tabular_data/Preprocessing/missing_values.html#handle_missing_data">built-in function</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/Data%20Processing/ImageShow.html#ImageShow">ImageShow (built-in class)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/Data%20Processing/ImageTrans.html#ImageTrans">ImageTrans (built-in class)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -211,8 +354,13 @@
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="Tabular_data/Preprocessing/merge.html#merge_datasets">merge_datasets (built-in class)</a>
+      <li>
+    merge_datasets()
+
+      <ul>
+        <li><a href="Tabular_data/Preprocessing/merge.html#merge_datasets">built-in function</a>
 </li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
@@ -222,6 +370,16 @@
         <li><a href="Tabular_data/ml/models_test.html#models_test">built-in function</a>
 </li>
       </ul></li>
+      <li><a href="Detection/_models/Custom/modify.html#CustomYoloModel.modify_layer">modify_layer() (CustomYoloModel method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/Data%20Processing/user.html#NamedBytesIO">NamedBytesIO (built-in class)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -241,6 +399,12 @@
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/Data%20Processing/FileCsvHandler-pair.html#FileCsvHandler.pair">pair() (FileCsvHandler method)</a>
+
+      <ul>
+        <li><a href="Detection/Data%20Processing/FilesHandler-pair.html#FilesHandler.pair">(FilesHandler method)</a>
+</li>
+      </ul></li>
       <li>
     plot_f1_scores_plotly()
 
@@ -264,21 +428,57 @@
         <li><a href="Tabular_data/ml/predict.html#predict">built-in function</a>
 </li>
       </ul></li>
+      <li><a href="Detection/_models/yolov8/predict_on_image.html#YoloModel.predict_on_image">predict_on_image() (YoloModel method)</a>
+</li>
+      <li><a href="Detection/_models/yolov8/predict_on_video.html#YoloModel.predict_on_video">predict_on_video() (YoloModel method)</a>
+</li>
   </ul></td>
 </tr></table>
 
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="Tabular_data/Preprocessing/excess_to_other.html#replace_excess_values_with_other">replace_excess_values_with_other (built-in class)</a>
+      <li><a href="Detection/_models/Custom/remove_all.html#CustomYoloModel.remove_all_layers">remove_all_layers() (CustomYoloModel method)</a>
 </li>
+      <li><a href="Detection/Data%20Processing/FileCsvHandler-remove_empty.html#FileCsvHandler.remove_empty">remove_empty() (FileCsvHandler method)</a>
+
+      <ul>
+        <li><a href="Detection/Data%20Processing/FilesHandler-remove_empty.html#FilesHandler.remove_empty">(FilesHandler method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/_models/Custom/remove_last.html#CustomYoloModel.remove_last_layer">remove_last_layer() (CustomYoloModel method)</a>
+</li>
+      <li><a href="Detection/_models/Custom/remove_last_n_layers.html#CustomYoloModel.remove_last_n_layers">remove_last_n_layers() (CustomYoloModel method)</a>
+</li>
+      <li>
+    replace_excess_values_with_other()
+
+      <ul>
+        <li><a href="Tabular_data/Preprocessing/excess_to_other.html#replace_excess_values_with_other">built-in function</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="Tabular_data/Preprocessing/feature_scaling.html#scale_features">scale_features (built-in class)</a>
+      <li>
+    scale_features()
+
+      <ul>
+        <li><a href="Tabular_data/Preprocessing/feature_scaling.html#scale_features">built-in function</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/Data%20Processing/FilesHandler-separate_files_by_type.html#FilesHandler.separate_files_by_type">separate_files_by_type() (FilesHandler method)</a>
+</li>
+      <li><a href="Detection/Data%20Processing/ImageShow-show.html#ImageShow.show">show() (ImageShow method)</a>
+</li>
+      <li><a href="Detection/Data%20Processing/Exporter-split_data.html#Exporter.split_data">split_data() (Exporter method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -286,6 +486,8 @@
 <h2 id="T">T</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/_models/Tensorflow/tfmodels.html#TensorflowModels">TensorflowModels (built-in class)</a>
+</li>
       <li>
     test()
 
@@ -293,6 +495,63 @@
         <li><a href="Tabular_data/ml/test.html#test">built-in function</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/_models/Tensorflow/train.html#TensorflowModels.train">train() (TensorflowModels method)</a>
+
+      <ul>
+        <li><a href="Detection/_models/yolov8/trainyolov8.html#YoloModel.train">(YoloModel method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/_models/Tensorflow/config.html#TensorflowModels.update_config_basic">update_config_basic() (TensorflowModels method)</a>
+</li>
+      <li>
+    utils.test_model_on_camera()
+
+      <ul>
+        <li><a href="Detection/_models/Tensorflow/testvideo.html#utils.test_model_on_camera">built-in function</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    utils.test_model_on_image()
+
+      <ul>
+        <li><a href="Detection/_models/Tensorflow/testimage.html#utils.test_model_on_image">built-in function</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/_models/Custom/validate.html#CustomYoloModel.validate_architecture">validate_architecture() (CustomYoloModel method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="Y">Y</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    Yolo.train.train_Custom_model()
+
+      <ul>
+        <li><a href="Detection/_models/Custom/train.html#Yolo.train.train_Custom_model">built-in function</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="Detection/_models/yolov8/yolov8model.html#YoloModel">YoloModel (built-in class)</a>
+</li>
   </ul></td>
 </tr></table>
 

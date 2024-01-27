@@ -1,9 +1,9 @@
 Basic unstructured data
 +++++++++++++++++++++++
 
-.. class:: handel_basic_structured_data(df, column=[])
+.. function:: handel_basic_structured_data(df, column=[])
 
-   The `handel_basic_structured_data` class addresses basic structural errors in a DataFrame selected column or all columns.
+   The :func:`handel_basic_structured_data` method addresses basic structural errors in a DataFrame selected column or all columns.
 
    :param df: The input DataFrame.
    :type df: pd.DataFrame

@@ -1,8 +1,8 @@
 Handling missing values
 
-.. class:: handle_missing_data(df, method='drop', threshold=0.7, imputation_method='mean', constant_value=None, k_neighbors=2)
+.. function:: handle_missing_data(df, method='drop', threshold=0.7, imputation_method='mean', constant_value=None, k_neighbors=2)
 
-   The `handle_missing_data` class provides functionality for handling missing values in a DataFrame.
+   The :func:`handle_missing_data` method provides functionality for handling missing values in a DataFrame.
 
    :param df: Input DataFrame with missing values.
    :type df: pd.DataFrame

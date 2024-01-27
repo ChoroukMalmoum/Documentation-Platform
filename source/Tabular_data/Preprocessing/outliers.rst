@@ -1,9 +1,9 @@
 Handling Outliers
 ++++++++++++++++++
 
-.. class:: drop_outliers(df, column_name, method='auto', z_threshold=3, iqr_multiplier=15)
+.. function:: drop_outliers(df, column_name, method='auto', z_threshold=3, iqr_multiplier=15)
 
-   The `drop_outliers` method is a preprocessing subclass.
+   The :func:`drop_outliers` method is a preprocessing subclass.
 
    This method provides options for handling outliers in a DataFrame, allowing users to choose between automated methods or customized approaches.
 

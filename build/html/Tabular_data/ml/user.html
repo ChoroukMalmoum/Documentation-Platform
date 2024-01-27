@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machine Learning &mdash; giiads_platform  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Overview" href="../../Classification/overview.html" />
+    <link rel="prev" title="Data Preprocessing" href="../Preprocessing/user.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            giiads_platform
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Tabular_data</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Preprocessing/user.html">Data Preprocessing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Machine Learning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prediction"><strong>Prediction</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clustering"><strong>Clustering</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#determining-the-optimal-number-of-clusters"><strong>Determining the Optimal Number Of Clusters</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clusters-prediction"><strong>Clusters Prediction</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clustering-methods-testing"><strong>Clustering methods Testing</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#time-series"><strong>Time series</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preprocessing"><strong>Preprocessing</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#charts"><strong>Charts</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anomaly-detection"><strong>Anomaly Detection</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Classification</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/dataimportation.html">Data Importation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/Model.html">Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Classification/predict.html">Prediction</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Detection/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Detection/Data%20Processing/user.html">Data Handling and Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Detection/_models/user.html">Model</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">giiads_platform</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Machine Learning</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Tabular_data/ml/user.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="machine-learning">
+<h1>Machine Learning<a class="headerlink" href="#machine-learning" title="Link to this heading"></a></h1>
+<section id="prediction">
+<h2><strong>Prediction</strong><a class="headerlink" href="#prediction" title="Link to this heading"></a></h2>
+</section>
+<section id="clustering">
+<h2><strong>Clustering</strong><a class="headerlink" href="#clustering" title="Link to this heading"></a></h2>
+<section id="determining-the-optimal-number-of-clusters">
+<h3><strong>Determining the Optimal Number Of Clusters</strong><a class="headerlink" href="#determining-the-optimal-number-of-clusters" title="Link to this heading"></a></h3>
+<blockquote>
+<div><dl class="simple">
+<dt>The <a class="reference external" href="OptimalNumberOfClusters.html">OptimalNumberOfClusters</a> function determines the optimal number of clusters using different methods like the Elbow method, Silhouette method, or Dendrogram visualization. Users can start by selecting one of the 3 next methods:</dt><dd><ul class="simple">
+<li><p><strong>Elbow Method</strong> : This method visualizes the relationship between the number of clusters and the within-cluster sum of squares. Users provide a range (k_min to k_max) to explore, and the function identifies the “elbow” point, a crucial inflection where the rate of decrease in variance begins to decelerate, indicating a diminishing return on adding more clusters.</p></li>
+<li><p><strong>Silhouette Method</strong> : By computing silhouette scores for different cluster sizes within the specified range, this approach quantifies the quality of clustering. Higher silhouette scores suggest better-defined clusters, and the function returns the cluster number corresponding to the peak silhouette score.</p></li>
+<li><p><strong>Dendrogram Visualization</strong> : This method presents a dendrogram, a tree-like structure revealing cluster relationships. Users can visually inspect this tree and infer the number of clusters based on the hierarchical divisions.</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</section>
+<section id="clusters-prediction">
+<h3><strong>Clusters Prediction</strong><a class="headerlink" href="#clusters-prediction" title="Link to this heading"></a></h3>
+<blockquote>
+<div><dl class="simple">
+<dt>The <a class="reference external" href="predict.html">predict</a> helps users to easily group their data points into clusters. It simplifies the process of choosing and using a clustering method, making it user-friendly. When users use this function, they can pick a clustering method and set it up according to their needs. The function offers the next 4 methods to choose from:</dt><dd><ul class="simple">
+<li><p><strong>KMeans</strong> :  A classic centroid-based approach.</p></li>
+<li><p><strong>Agglomerative Clustering</strong> :  hierarchical method that constructs a tree of clusters.</p></li>
+<li><p><strong>DBSCAN</strong> : A density-based algorithm identifying clusters as high-density regions separated by low-density areas.</p></li>
+<li><p><strong>Gaussian Mixture Model (GMM)</strong> : A probabilistic model capturing underlying Gaussian distributions within data.24-hour</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</section>
+<section id="clustering-methods-testing">
+<h3><strong>Clustering methods Testing</strong><a class="headerlink" href="#clustering-methods-testing" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>The <a class="reference external" href="test.html">test</a> function offers users a robust framework for comparative analysis of various clustering algorithms. Recognizing the sensitivity of clustering to algorithmic choices, this function aims to elucidate performance disparities across methods. Users are encouraged to input their dataset and desired clustering parameters. Users are presented with a choice of 4 distinct clustering algorithms: KMeans, Agglomerative Clustering, DBSCAN, Gaussian Mixture Model (GMM).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function is employed when the user already possesses a column that categorizes their data points into clusters. It evaluates the selected models and contrasts their outcomes with the user-defined clusters using the F1 score.</p>
+</div>
+</div></blockquote>
+</section>
+</section>
+<section id="time-series">
+<h2><strong>Time series</strong><a class="headerlink" href="#time-series" title="Link to this heading"></a></h2>
+<section id="preprocessing">
+<h3><strong>Preprocessing</strong><a class="headerlink" href="#preprocessing" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>The <a class="reference external" href="extract_temporal_features_existing.html">extract_temporal_features_existing</a> function extracts temporal features such as Year, Month, Day, Weekday, Hour, Minute, Second, and Date_Only from a given time series dataset that already includes a timestamp column. It first converts the timestamp data into a standardized format using the provided or inferred timestamp format and then computes the aforementioned temporal features for each timestamp entry, appending them as new columns to the original dataset.</p>
+<p>The <a class="reference external" href="create_timestamp_column.html">create_timestamp_column</a> function is designed for time series datasets without a unified timestamp column, this function synthesizes a new timestamp column by merging user-specified columns for Year, Month, Day, Hour, Minute, and Second. After constructing the timestamp, the function appends it as a new column to the input dataset, providing a consolidated temporal reference for each data entry.</p>
+</div></blockquote>
+</section>
+<section id="charts">
+<h3><strong>Charts</strong><a class="headerlink" href="#charts" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>The <a class="reference external" href="plot_time_series_with_anomalies.html">plot_time_series_with_anomalies</a> function visualizes a time series data along with identified anomalies using the plotly library. The primary time series is depicted as a continuous line plot, while anomalies, marked with red dots, overlay on top of the original data. This visualization aids in quickly identifying periods or data points deviating significantly from the norm.</p>
+<p>The <a class="reference external" href="create_anomaly_score_plot.html">create_anomaly_score_plot</a> function generates a graphical representation of anomaly scores derived from a specified anomaly detection method, along with a threshold delineating normal from anomalous behavior. This visualization assists in setting and understanding thresholds for anomaly detection, ensuring that genuine anomalies are accurately distinguished.</p>
+</div></blockquote>
+</section>
+<section id="anomaly-detection">
+<h3><strong>Anomaly Detection</strong><a class="headerlink" href="#anomaly-detection" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>The <a class="reference external" href="anomalies_detection.html">anomalies_detection</a> function offers multiple detection methods, including Hotelling’s T^2, One-Class SVM, Isolation Forest, Local Outlier Factor, ChangeFinder, and Sigma Thresholding. Depending on the chosen method, the function calculates anomaly scores and determines anomalies based on predefined thresholds or statistical measures, returning a DataFrame annotated with anomaly labels.</p>
+<p>The <a class="reference external" href="models_test.html">models_test</a> function serves as a comparative evaluation tool for various anomaly detection methods applied to a given time series dataset. By iterating through specified methods, the function computes anomaly labels and evaluates their performance using the F1 score metric, aggregating the results into a DataFrame for easy comparison and further analysis.</p>
+<p>The <a class="reference external" href="plot_f1_scores_plotly.html">plot_f1_scores_plotly</a> function creates a bar chart illustrating the F1 scores of different anomaly detection methods. Each bar represents a method, and its height corresponds to the computed F1 score, offering a visual benchmark to assess the relative effectiveness of each method in detecting anomalies within the dataset.</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Preprocessing/user.html" class="btn btn-neutral float-left" title="Data Preprocessing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../Classification/overview.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Chorouk Malmoum.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

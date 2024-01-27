@@ -1,9 +1,9 @@
 Aggregation and Grouping
 +++++++++++++++++++++++++++++++++
 
-.. class:: aggregate_and_group(df, grouping_columns, aggregation_functions)
+.. function:: aggregate_and_group(df, grouping_columns, aggregation_functions)
 
-   The `aggregate_and_group` class aggregates data by grouping rows based on specific criteria.
+   The :func:`aggregate_and_group` method aggregates data by grouping rows based on specific criteria.
 
    :param df: The input DataFrame.
    :type df: pd.DataFrame

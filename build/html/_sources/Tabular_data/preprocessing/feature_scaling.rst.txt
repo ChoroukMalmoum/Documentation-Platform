@@ -1,9 +1,9 @@
 Feature Scaling
 +++++++++++++++
 
-.. class:: scale_features(df, columns=None, method='minmax')
+.. function:: scale_features(df, columns=None, method='minmax')
 
-   The `scale_features` class scales numerical features in a DataFrame using standardization or min-max scaling.
+   The :func:`scale_features` method scales numerical features in a DataFrame using standardization or min-max scaling.
 
    :param df: Input DataFrame.
    :type df: pd.DataFrame

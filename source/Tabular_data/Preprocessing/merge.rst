@@ -2,9 +2,9 @@ Merge Datasets
 +++++++++++++++
 
 
-.. class:: merge_datasets(dataset1, dataset2, column_dataset1, column_dataset2, merge_type='left')
+.. function:: merge_datasets(dataset1, dataset2, column_dataset1, column_dataset2, merge_type='left')
 
-   The `merge_datasets` class merges two datasets based on specified columns.
+   The :func:`merge_datasets` method merges two datasets based on specified columns.
 
    :param dataset1: The first dataset.
    :type dataset1: pd.DataFrame

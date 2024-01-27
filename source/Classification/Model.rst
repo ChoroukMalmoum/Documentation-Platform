@@ -1,5 +1,7 @@
+Model
++++++++++
 Model Selection
-+++++++++++++++++++
+==================
 
 Once data is imported, the next step involves selecting a model for image classification. The application provides three distinct options to accommodate various user preferences and requirements:
 
@@ -71,7 +73,7 @@ The "Choose Pretrained Model" option streamlines the model selection process, al
 
 
 Model Training
-+++++++++++++++++++
+===============
 
 After selecting the model, the next crucial step is training it on your data to enhance its predictive capabilities.
 

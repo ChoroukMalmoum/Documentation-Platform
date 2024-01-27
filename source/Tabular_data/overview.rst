@@ -15,14 +15,16 @@ Introduction
 
 .. _overview:
 
-Our Application is a powerful tool designed to assist users in working with tabular data. It offers a seamless workflow for cleaning, transforming, and exploring data, as well as creating insightful visualizations and making predictions using various machine learning techniques.
+Our platform is a powerful tool designed to assist users in working with tabular data. It offers a seamless workflow for cleaning, transforming, and exploring data, as well as creating insightful visualizations and making predictions using various machine learning techniques.
 
 Data Processing
 ---------------
+.. _processing: 
 
-.. _processing:
+`Data Processing <Preprocessing/user.html>`_
 
-The application seamlessly facilitates crucial data preprocessing tasks, encompassing cleaning, transformation, and Exploratory Data Analysis (EDA). Users can effortlessly tidy up disorganized data, address missing values, and apply transformations to ready their datasets for in-depth analysis. Moreover, the application uniquely empowers users to conduct EDA concurrently with preprocessing, providing valuable insights into the data and aiding users in making informed decisions about how to refine and enhance their datasets. Additionally, it offers a diverse set of visualization options, ranging from straightforward charts to intricate plots, enabling users to intuitively discern patterns and trends within their data.
+
+The platform seamlessly facilitates crucial data preprocessing tasks, encompassing cleaning, transformation, and Exploratory Data Analysis (EDA). Users can effortlessly tidy up disorganized data, address missing values, and apply transformations to ready their datasets for in-depth analysis. Moreover, the application uniquely empowers users to conduct EDA concurrently with preprocessing, providing valuable insights into the data and aiding users in making informed decisions about how to refine and enhance their datasets. Additionally, it offers a diverse set of visualization options, ranging from straightforward charts to intricate plots, enabling users to intuitively discern patterns and trends within their data.
 
 Dashboards
 ----------
@@ -33,18 +35,13 @@ Create dynamic and customizable dashboards to showcase your findings. Users can 
 
 Machine Learning
 ----------------
-
 .. _machine_learning:
 
-Take advantage of machine learning capabilities within the application. Perform tasks such as classification, regression, time series analysis, and clustering on your data. Our Application provides state-of-the-art algorithms to make predictions and uncover hidden patterns in the data.
+`Machine Learning <ml/user.html>`_
 
 
-Getting Started
----------------
+Take advantage of machine learning capabilities within the platform. Perform tasks such as classification, regression, time series analysis, and clustering on your data. Our Application provides state-of-the-art algorithms to make predictions and uncover hidden patterns in the data.
 
-For a quick start guide and installation instructions, please refer to the `Getting Started <C:\Users\malmo\Desktop\Digitalisation\platform_giads\documentation\source\Tabular_data\preprocessing\preprocessing.rst>`_ section.
 
-For in-depth details on each feature, follow the links in the table of contents.
 
-Enjoy using Our Application, and feel free to reach out for any assistance or feedback!
 

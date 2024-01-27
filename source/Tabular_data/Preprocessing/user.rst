@@ -8,7 +8,7 @@ Data preprocessing is a critical step in preparing raw datasets for analysis and
 
 a. **Handling Outliers**
 ==============================
-       The `handle_outliers <outliers.html>`_ class offers users 3 options for managing outliers. Users can start by selecting the specific column for outlier removal and then choose between automated methods or personalized approaches. Two primary strategies are available:
+       The `handle_outliers <outliers.html>`_ method offers users 3 options for managing outliers. Users can start by selecting the specific column for outlier removal and then choose between automated methods or personalized approaches. Two primary strategies are available:
 
        - **Z-Score Method:**
          Suited for datasets with a normal distribution, this method identifies outliers based on their deviation from the mean in terms of standard deviations using the ``z_threshold`` .
@@ -20,7 +20,7 @@ a. **Handling Outliers**
 
 b. **Handling Missing Data**
 ===================================
-       The `handle_missing_data <missing_values.html>`_ class offers flexibility in handling missing values, giving users the choice to:
+       The `handle_missing_data <missing_values.html>`_ method offers flexibility in handling missing values, giving users the choice to:
 
        - **Delete Missing Data:**
          Users can opt to remove rows or columns containing missing values.
@@ -34,7 +34,7 @@ b. **Handling Missing Data**
   
 a. **Basic unstructured data**
 ==================================
-      The `handel_basic_structured_data <structural_errors.html>`_ Class addresses basic structural errors:
+      The `handel_basic_structured_data <structural_errors.html>`_ method addresses basic structural errors:
 
      - **Removing White Spaces:**
        Trimming unnecessary spaces ensures data uniformity and consistency.
@@ -44,7 +44,7 @@ a. **Basic unstructured data**
     
 b. **Unstructured date format**
 ====================================
-     The `convert_to_iso8601 <convert_to_iso8601.html>`_ Class addresses dates structural errors. In the context of data formation adhering to the ISO 8601 standard for date and time-related data.
+     The `convert_to_iso8601 <convert_to_iso8601.html>`_ method addresses dates structural errors. In the context of data formation adhering to the ISO 8601 standard for date and time-related data.
     .. note::
         ISO 8601 is an international standard covering the worldwide exchange and communication of date and time-related data. It is maintained by the International Organization for Standardization (ISO). 
         ISO 8601 applies to these representations and formats: dates, in the Gregorian calendar (including the proleptic Gregorian calendar); times, based on the 24-hour timekeeping system, with optional UTC offset; time intervals; and combinations thereof.
@@ -58,7 +58,7 @@ b. **Unstructured date format**
 
 a. **Feature Selection**
 ==============================
-        The `scale_features <Feature_Selection.html>`_ class supports Principal Component Analysis (PCA) for feature selection, allowing users to:
+        The `scale_features <Feature_Selection.html>`_ method supports Principal Component Analysis (PCA) for feature selection, allowing users to:
         - Specify the number of desired features.
         - Optionally choose specific features to retain.
         - Option for an automated mode for streamlined selection.
@@ -67,28 +67,28 @@ a. **Feature Selection**
 
 b. **Aggregation and Grouping**
 ===================================
-        The `aggregate_and_group <aggregating.html>`_ class offers a flexible method for aggregating data, allowing users to:
+        The `aggregate_and_group <aggregating.html>`_ method offers a flexible method for aggregating data, allowing users to:
         - Identify grouping columns.
         - Specify aggregation functions for each column: max, min, sum, mean, median, std, numique, first and last.        
         This class facilitates the creation of summarized datasets for more efficient analysis.
 
 c. **Replace Excess Categories with "Other"**
 =================================================
-        The `replace_excess_values_with_other <excess_to_other.html>`_ class Address categorical data challenges by replacing less common values. Our application provides the option to:
+        The `replace_excess_values_with_other <excess_to_other.html>`_ method Address categorical data challenges by replacing less common values. Our application provides the option to:
         - Select columns for replacement.
         - Specify the number of top values to retain (default is 3).
         - Automatically replace excess categories with 'other' for improved data clarity.
 
 d. **Feature Scaling**
 ===========================
-        The `scale_features <feature_scaling.html>`_ class Standardizes or normalize numerical features for improved model performance. The application supports:
+        The `scale_features <feature_scaling.html>`_ method Standardizes or normalize numerical features for improved model performance. The application supports:
         - Scaling specific numerical features. If the list of specific features to scales is not provided, all numerical columns will be scaled.
         - Choosing between standardization and min-max scaling methods.  
         This ensures that numerical features contribute uniformly to the analysis.
 
 e. **Merge Datasets**
 ============================
-        The `merge_datasets <merge.html>`_ class Combines datasets seamlessly based on user-specified columns and merge type. Users can:        
+        The `merge_datasets <merge.html>`_ method Combines datasets seamlessly based on user-specified columns and merge type. Users can:        
         - Select datasets to merge.
         - Choose the merge type ('left', 'right', 'inner', 'outer').     
         This facilitates the integration of disparate datasets for a comprehensive analysis.

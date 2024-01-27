@@ -1,7 +1,6 @@
 Overview
 ++++++++
-Welcome to the documentation for Our Application ! This document provides an introduction and overview of the features and functionality offered by our application.
-
+Welcome to the documentation for the Tabular data Application ! This document will help you understand the functionalities of this part of the GIIADS Platform
 **Table of Contents:**
 
 - `Introduction <#overview>`_
@@ -15,7 +14,7 @@ Introduction
 
 .. _overview:
 
-Our platform is a powerful tool designed to assist users in working with tabular data. It offers a seamless workflow for cleaning, transforming, and exploring data, as well as creating insightful visualizations and making predictions using various machine learning techniques.
+Introducing the Tabular data functionality designed to assist users in working with tabular data. It offers a seamless workflow for cleaning, transforming, and exploring data, as well as creating insightful visualizations and making predictions using various machine learning techniques.
 
 Data Processing
 ---------------

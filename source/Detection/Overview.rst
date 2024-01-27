@@ -21,7 +21,7 @@ Overview
 Introduction
 --------------
 
-Introducing the Object Detection App, a tool designed for efficient object detection workflows. Users can easily import both local and external data in various formats, ensuring compatibility with diverse datasets. The app's advanced cleaning features help maintain dataset accuracy, while its intuitive labeling system facilitates precise object categorization. With built-in preprocessing options like data splitting and augmentation, the Object Detection App optimizes datasets for improved model training. The app also generates detailed reports on data quality, providing valuable insights for users. With a user-friendly interface, the Object Detection App simplifies the object detection process, making it an essential tool for streamlined data management.
+Introducing the Object Detection functionality, a tool designed for efficient object detection workflows. Users can easily import both local and external data in various formats, ensuring compatibility with diverse datasets. The app's advanced cleaning features help maintain dataset accuracy, while its intuitive labeling system facilitates precise object categorization. With built-in preprocessing options like data splitting and augmentation, the Object Detection App optimizes datasets for improved model training. The app also generates detailed reports on data quality, providing valuable insights for users. With a user-friendly interface, the Object Detection App simplifies the object detection process, making it an essential tool for streamlined data management.
 
 
 .. _import:

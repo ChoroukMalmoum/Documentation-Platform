@@ -1,15 +1,18 @@
-Data Importation
-++++++++++++++++++
+Data Handling and Preparation
++++++++++++++++++++++++++++++
+Data handling and preparation are crucial steps in the workflow of our image Classification App. This process involves importing images and their labels for further analysis and training.
 
-
+  
+**Data importation:**
+-----------------------
 
 Data importation is a crucial initial step in the image classification process, where users bring their datasets into the application for further analysis and model training. This phase provides two primary methods for importing data:
 
 
-1. **Importing Images Directly:**
-------------------------
+a. **Importing Images Directly**
+=====================================
 
-  Users can seamlessly upload images directly into the application. This method is straightforward and user-     friendly. To successfully import images, users should follow these steps:
+  Users can seamlessly upload images directly into the application. This method is straightforward and user-friendly. To successfully import images, users should follow these steps:
 
       - Navigate to the application's interface.
       - Look for the "Create new Dataset" option.
@@ -20,8 +23,8 @@ Data importation is a crucial initial step in the image classification process, 
   The application will then proceed to preprocess the uploaded images for subsequent analysis.
 
 
-2. **Importing from an Excel Files:**
-------------------------
+b. **Importing from an Excel Files**
+=====================================
 
   Alternatively, users have the option to import data from an Excel file containing image URLs. This     
   method is   convenient for users who maintain image information in a structured Excel format. To use 
@@ -36,7 +39,7 @@ Data importation is a crucial initial step in the image classification process, 
   Ensure your data adheres to the specified format and follows the guidelines provided in the application    for a smooth importation process.
 
 
-Data Exploration
+**Data Exploration**
 ------------------------
 
 

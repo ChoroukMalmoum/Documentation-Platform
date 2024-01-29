@@ -37,6 +37,12 @@ Welcome to giiads_platform's documentation!
    Detection/_models/user
 
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Getting Started
+
+   Getting_started/user
 
 Overview
 ------------

@@ -21,4 +21,4 @@ models_test Function
     :param anomaly_column: str, column name indicating true anomalies in the dataset.
     :param y_axis: str, column name representing the feature or variable to be analyzed for anomalies.
     :param methods: list, optional, list of methods to evaluate. If empty, all supported methods are evaluated.
-    :return: dict, a dictionary containing the F1-scores for each evaluated method.
+    :return: dict, a dictionary containing the F1-scores for each evaluated method, and a dataframe with the anomalies detected using each model.

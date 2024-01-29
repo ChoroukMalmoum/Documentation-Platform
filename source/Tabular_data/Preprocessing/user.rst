@@ -34,7 +34,7 @@ b. **Handling Missing Data**
   
 a. **Basic unstructured data**
 ==================================
-      The `handel_basic_structured_data <structural_errors.html>`_ method addresses basic structural errors:
+      The `fix_structural_errors <structural_errors.html>`_ method addresses basic structural errors:
 
      - **Removing White Spaces:**
        Trimming unnecessary spaces ensures data uniformity and consistency.
@@ -93,3 +93,6 @@ e. **Merge Datasets**
         - Choose the merge type ('left', 'right', 'inner', 'outer').     
         This facilitates the integration of disparate datasets for a comprehensive analysis.
     These transformation capabilities enable users to mold their data to meet specific analytical requirements, enhancing the overall effectiveness of downstream analyses.
+
+.. note::
+  For examples of usage, refer to the `Google Colab Notebook <https://colab.research.google.com/drive/18l04pM7kgrD5VK-UNFJbG5mr0AL0we_o?usp=sharing>`_

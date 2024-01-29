@@ -51,15 +51,15 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Machine Learning</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#prediction"><strong>Prediction</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clustering"><strong>Clustering</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#determining-the-optimal-number-of-clusters"><strong>Determining the Optimal Number Of Clusters</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#clusters-prediction"><strong>Clusters Prediction</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#clustering-methods-testing"><strong>Clustering methods Testing</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#a-determining-the-optimal-number-of-clusters">a. <strong>Determining the Optimal Number Of Clusters</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-clusters-prediction">b. <strong>Clusters Prediction</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-clustering-methods-testing">c. <strong>Clustering methods Testing</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#time-series"><strong>Time series</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#preprocessing"><strong>Preprocessing</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#charts"><strong>Charts</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#anomaly-detection"><strong>Anomaly Detection</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#a-preprocessing">a. <strong>Preprocessing</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-charts">c. <strong>Charts</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-anomaly-detection">d. <strong>Anomaly Detection</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -107,11 +107,39 @@
 <h1>Machine Learning<a class="headerlink" href="#machine-learning" title="Link to this heading"></a></h1>
 <section id="prediction">
 <h2><strong>Prediction</strong><a class="headerlink" href="#prediction" title="Link to this heading"></a></h2>
+<p>The predictive module processes the user-uploaded dataset along with specified parameters, including:</p>
+<ul class="simple">
+<li><p>The target column</p></li>
+<li><p>Chosen epochs</p></li>
+<li><p>Desired prediction type</p></li>
+</ul>
+<p>For regression tasks, users can opt for:</p>
+<ul class="simple">
+<li><p>Linear Regression</p></li>
+<li><p>Ridge Regression</p></li>
+<li><p>Lasso Regression</p></li>
+<li><p>Decision Tree Regression</p></li>
+<li><p>k-Nearest Neighbors</p></li>
+<li><p>Support Vector Machine Regressor</p></li>
+<li><p>Random Forest</p></li>
+<li><p>XGBoost Regressor</p></li>
+</ul>
+<p>For classification, choices include:</p>
+<ul class="simple">
+<li><p>Logistic Regression</p></li>
+<li><p>k-Nearest Neighbors</p></li>
+<li><p>Support Vector Machine Classifier</p></li>
+<li><p>Decision Tree</p></li>
+<li><p>Random Forest</p></li>
+<li><p>Gradient Boosting</p></li>
+</ul>
+<p><strong>OUTPUT:</strong></p>
+<p>Once users provide these inputs, the function generates metric results. For regression, the outputs consist of mean squared error (MSE), mean absolute error (MAE), and root mean squared error (RMSE). For classification, the function produces a confusion matrix, accuracy score, precision score, recall score, and F1 score.</p>
 </section>
 <section id="clustering">
 <h2><strong>Clustering</strong><a class="headerlink" href="#clustering" title="Link to this heading"></a></h2>
-<section id="determining-the-optimal-number-of-clusters">
-<h3><strong>Determining the Optimal Number Of Clusters</strong><a class="headerlink" href="#determining-the-optimal-number-of-clusters" title="Link to this heading"></a></h3>
+<section id="a-determining-the-optimal-number-of-clusters">
+<h3>a. <strong>Determining the Optimal Number Of Clusters</strong><a class="headerlink" href="#a-determining-the-optimal-number-of-clusters" title="Link to this heading"></a></h3>
 <blockquote>
 <div><dl class="simple">
 <dt>The <a class="reference external" href="OptimalNumberOfClusters.html">OptimalNumberOfClusters</a> function determines the optimal number of clusters using different methods like the Elbow method, Silhouette method, or Dendrogram visualization. Users can start by selecting one of the 3 next methods:</dt><dd><ul class="simple">
@@ -123,8 +151,8 @@
 </dl>
 </div></blockquote>
 </section>
-<section id="clusters-prediction">
-<h3><strong>Clusters Prediction</strong><a class="headerlink" href="#clusters-prediction" title="Link to this heading"></a></h3>
+<section id="b-clusters-prediction">
+<h3>b. <strong>Clusters Prediction</strong><a class="headerlink" href="#b-clusters-prediction" title="Link to this heading"></a></h3>
 <blockquote>
 <div><dl class="simple">
 <dt>The <a class="reference external" href="predict.html">predict</a> helps users to easily group their data points into clusters. It simplifies the process of choosing and using a clustering method, making it user-friendly. When users use this function, they can pick a clustering method and set it up according to their needs. The function offers the next 4 methods to choose from:</dt><dd><ul class="simple">
@@ -137,40 +165,48 @@
 </dl>
 </div></blockquote>
 </section>
-<section id="clustering-methods-testing">
-<h3><strong>Clustering methods Testing</strong><a class="headerlink" href="#clustering-methods-testing" title="Link to this heading"></a></h3>
+<section id="c-clustering-methods-testing">
+<h3>c. <strong>Clustering methods Testing</strong><a class="headerlink" href="#c-clustering-methods-testing" title="Link to this heading"></a></h3>
 <blockquote>
 <div><p>The <a class="reference external" href="test.html">test</a> function offers users a robust framework for comparative analysis of various clustering algorithms. Recognizing the sensitivity of clustering to algorithmic choices, this function aims to elucidate performance disparities across methods. Users are encouraged to input their dataset and desired clustering parameters. Users are presented with a choice of 4 distinct clustering algorithms: KMeans, Agglomerative Clustering, DBSCAN, Gaussian Mixture Model (GMM).</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>This function is employed when the user already possesses a column that categorizes their data points into clusters. It evaluates the selected models and contrasts their outcomes with the user-defined clusters using the F1 score.</p>
 </div>
 </div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For examples of usage, refer to the <a class="reference external" href="https://colab.research.google.com/drive/1z-tb0K0ESR4pKrS7imZ3tBV8a6JLiLnh?usp=sharing">Google Colab Notebook</a></p>
+</div>
 </section>
 </section>
 <section id="time-series">
 <h2><strong>Time series</strong><a class="headerlink" href="#time-series" title="Link to this heading"></a></h2>
-<section id="preprocessing">
-<h3><strong>Preprocessing</strong><a class="headerlink" href="#preprocessing" title="Link to this heading"></a></h3>
+<section id="a-preprocessing">
+<h3>a. <strong>Preprocessing</strong><a class="headerlink" href="#a-preprocessing" title="Link to this heading"></a></h3>
 <blockquote>
 <div><p>The <a class="reference external" href="extract_temporal_features_existing.html">extract_temporal_features_existing</a> function extracts temporal features such as Year, Month, Day, Weekday, Hour, Minute, Second, and Date_Only from a given time series dataset that already includes a timestamp column. It first converts the timestamp data into a standardized format using the provided or inferred timestamp format and then computes the aforementioned temporal features for each timestamp entry, appending them as new columns to the original dataset.</p>
 <p>The <a class="reference external" href="create_timestamp_column.html">create_timestamp_column</a> function is designed for time series datasets without a unified timestamp column, this function synthesizes a new timestamp column by merging user-specified columns for Year, Month, Day, Hour, Minute, and Second. After constructing the timestamp, the function appends it as a new column to the input dataset, providing a consolidated temporal reference for each data entry.</p>
 </div></blockquote>
 </section>
-<section id="charts">
-<h3><strong>Charts</strong><a class="headerlink" href="#charts" title="Link to this heading"></a></h3>
+<section id="c-charts">
+<h3>c. <strong>Charts</strong><a class="headerlink" href="#c-charts" title="Link to this heading"></a></h3>
 <blockquote>
 <div><p>The <a class="reference external" href="plot_time_series_with_anomalies.html">plot_time_series_with_anomalies</a> function visualizes a time series data along with identified anomalies using the plotly library. The primary time series is depicted as a continuous line plot, while anomalies, marked with red dots, overlay on top of the original data. This visualization aids in quickly identifying periods or data points deviating significantly from the norm.</p>
 <p>The <a class="reference external" href="create_anomaly_score_plot.html">create_anomaly_score_plot</a> function generates a graphical representation of anomaly scores derived from a specified anomaly detection method, along with a threshold delineating normal from anomalous behavior. This visualization assists in setting and understanding thresholds for anomaly detection, ensuring that genuine anomalies are accurately distinguished.</p>
 </div></blockquote>
 </section>
-<section id="anomaly-detection">
-<h3><strong>Anomaly Detection</strong><a class="headerlink" href="#anomaly-detection" title="Link to this heading"></a></h3>
+<section id="d-anomaly-detection">
+<h3>d. <strong>Anomaly Detection</strong><a class="headerlink" href="#d-anomaly-detection" title="Link to this heading"></a></h3>
 <blockquote>
 <div><p>The <a class="reference external" href="anomalies_detection.html">anomalies_detection</a> function offers multiple detection methods, including Hotelling’s T^2, One-Class SVM, Isolation Forest, Local Outlier Factor, ChangeFinder, and Sigma Thresholding. Depending on the chosen method, the function calculates anomaly scores and determines anomalies based on predefined thresholds or statistical measures, returning a DataFrame annotated with anomaly labels.</p>
 <p>The <a class="reference external" href="models_test.html">models_test</a> function serves as a comparative evaluation tool for various anomaly detection methods applied to a given time series dataset. By iterating through specified methods, the function computes anomaly labels and evaluates their performance using the F1 score metric, aggregating the results into a DataFrame for easy comparison and further analysis.</p>
 <p>The <a class="reference external" href="plot_f1_scores_plotly.html">plot_f1_scores_plotly</a> function creates a bar chart illustrating the F1 scores of different anomaly detection methods. Each bar represents a method, and its height corresponds to the computed F1 score, offering a visual benchmark to assess the relative effectiveness of each method in detecting anomalies within the dataset.</p>
 </div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For examples of usage, refer to the <a class="reference external" href="https://colab.research.google.com/drive/1H5MSjPEfX5ZLpY13rGExV5jFHgFrepyv?usp=sharing">Google Colab Notebook</a></p>
+</div>
 </section>
 </section>
 </section>

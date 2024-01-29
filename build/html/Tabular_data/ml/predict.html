@@ -96,11 +96,11 @@
 <ul class="simple">
 <li><p><strong>method</strong> (<em>str, optional</em>): Specifies the clustering algorithm to be employed for prediction. Valid options include “kmeans”, “agglomerativeC”, “dbscan”, or “gmm”. Default is “kmeans”.</p></li>
 <li><p><strong>n_clusters</strong> (<em>int, optional</em>): The desired number of clusters for the selected clustering algorithm. Default is 4.</p></li>
-<li><p><strong>scaled_df</strong> (<em>DataFrame or array-like, optional</em>): The scaled dataset intended for cluster prediction, ensuring consistency and accuracy in results.</p></li>
-<li><p><strong>df</strong> (<em>DataFrame, optional</em>): The original dataset, retaining its intrinsic attributes and facilitating comprehensive analysis and visualization.</p></li>
+<li><p><strong>scaled_df</strong> (<em>DataFrame, required</em>): The scaled dataset intended for cluster prediction, ensuring consistency and accuracy in results.</p></li>
+<li><p><strong>df</strong> (<em>DataFrame, required</em>): The original dataset, retaining its intrinsic attributes and facilitating comprehensive analysis and visualization.</p></li>
 </ul>
 <p><strong>Returns</strong>:</p>
-<p>A dataframe augmented with cluster labels derived from the specified clustering algorithm and a scatter plot visual representation depicting the distribution of data points within the predicted clusters, fostering intuitive comprehension and exploratory data analysis.</p>
+<p>A dataframe augmented with cluster labels derived from the specified clustering algorithm.</p>
 </dd></dl>
 
 </section>

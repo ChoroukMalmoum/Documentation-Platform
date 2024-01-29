@@ -11,12 +11,12 @@ predict Function
     
     - **n_clusters** (*int, optional*): The desired number of clusters for the selected clustering algorithm. Default is 4.
     
-    - **scaled_df** (*DataFrame or array-like, optional*): The scaled dataset intended for cluster prediction, ensuring consistency and accuracy in results.
+    - **scaled_df** (*DataFrame, required*): The scaled dataset intended for cluster prediction, ensuring consistency and accuracy in results.
     
-    - **df** (*DataFrame, optional*): The original dataset, retaining its intrinsic attributes and facilitating comprehensive analysis and visualization.
+    - **df** (*DataFrame, required*): The original dataset, retaining its intrinsic attributes and facilitating comprehensive analysis and visualization.
 
     **Returns**:
 
-    A dataframe augmented with cluster labels derived from the specified clustering algorithm and a scatter plot visual representation depicting the distribution of data points within the predicted clusters, fostering intuitive comprehension and exploratory data analysis.
+    A dataframe augmented with cluster labels derived from the specified clustering algorithm.
 
 
